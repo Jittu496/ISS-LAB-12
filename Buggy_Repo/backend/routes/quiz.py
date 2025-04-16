@@ -1,46 +1,75 @@
-
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
-from typing import List, Optional
-from db import init_db
+from fastapi import APIRouter
+import random
 
 router = APIRouter(tags=["quiz"])
 
-class AnswerRequest(BaseModel):
-    question_id: int
-    answer: str
-    score: int
+questions = [
+    {
+        "id": 1,
+        "text": "What command lists directory contents?",
+        "options": ["ls", "cd", "rm", "pwd"],
+        "correct": "ls"
+    },
+    {
+        "id": 2,
+        "text": "Which command searches for text in files?",
+        "options": ["find", "grep", "locate", "cat"],
+        "correct": "grep"
+    },
+    {
+        "id": 3,
+        "text": "What changes file permissions?",
+        "options": ["chmod", "chown", "mv", "cp"],
+        "correct": "chmod"
+    },
+    {
+        "id": 4,
+        "text": "Which command displays the current directory?",
+        "options": ["dir", "pwd", "path", "where"],
+        "correct": "pwd"
+    },
+    {
+        "id": 5,
+        "text": "What removes a file?",
+        "options": ["rm", "del", "erase", "unlink"],
+        "correct": "rm"
+    }
+]
 
-async def get_quiz_collection():
-    db = await init_db()
-    return db["quiz_collection"]
+game_state = {"high_score": 0}
 
 @router.get("/question")
 async def get_question():
-    collection = await get_quiz_collection()
-    questions = await collection.find().to_list(length=5)
-    if not questions:
-        raise HTTPException(status_code=404, detail="No questions found")
     question = random.choice(questions)
     return {
-        "id": str(question["_id"]),
+        "id": question["id"],
         "text": question["text"],
         "options": question["options"]
     }
 
 @router.post("/answer")
-async def submit_answer(data: AnswerRequest):
-    collection = await get_quiz_collection()
-    question = await collection.find_one({"_id": ObjectId(data.question_id)})
-    if not question:
-        raise HTTPException(status_code=404, detail="Question not found")
+async def submit_answer(data: dict):
+    question_id = data.get("id")
+    answer = data.get("answer")
+    score = data.get("score", 0)
 
-    is_correct = data.answer == question["correct"]
+    question = next((q for q in questions if q["id"] == question_id), None)
+    if not question:
+        return {"error": "Invalid question ID"}
+
+    is_correct = answer == question["correct"]
     if is_correct:
-        data.score += 10
+        score += 10
+        if score > game_state["high_score"]:
+            game_state["high_score"] = score
 
     return {
         "is_correct": is_correct,
         "correct_answer": question["correct"],
-        "score": data.score
+        "score": score,
+        "high_score": game_state["high_score"]
     }
+
+@router.get("/highscore")
+async def get_highscore():
+    return {"high_score": game_state["high_score"]}
