@@ -40,7 +40,7 @@
 | 4   | No proper error handling  in items.py    |   Jittu496          |      Jittu496       | 
 | 5   |    No proper type hints                  |     Jittu496         |    Jittu496          |  
 | 6   | i have changed the items.py - Duplicate POST endpoint for create_item  |      Jittu496       |     Jittu496     |     
-| 7   |                                          |               |              |
+| 7   |   Added the missing <div class="container"> in items.html           |    Babu Shaik        |Babu Shaik   |
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
 | 10  |                                          |               |              |
@@ -52,15 +52,15 @@
 | 16  |                                          |               |              |
 | 17  |                                          |               |              |
 | 18  |                                          |               |              |
-| 19  |                                          |               |              |
+| 19  |  Added <div id="news">Loading news...</div> inside the .container to ensure the script has a target element in news.html  | Babu Shaik     |  Babu Shaik           | 
 | 20  |                                          |               |              |
 | 21  |                                          |               |              |
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
-| 24  |                                          |               |              |
+| 24  | Changed <script src="styles/profile.js"></script> to <script src="scripts/profile.js"></script> in profile.html.  | Babu Shaik             |Babu Shaik      |
 | 25  |                                          |               |              |
-| 26  |                                          |               |              |
-| 27  |                                          |               |              |
+| 26  | <script src="scripts/quiz.js"></script>   in quiz.html                                     | Babu Shaik          | Babu Shaik            | 
+ | 27 |                                            |          |                 |
 | 28  |                                          |               |              |
 | 29  |                                          |               |              |
 | 30  |                                          |               |              |
