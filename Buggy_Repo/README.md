@@ -37,7 +37,7 @@
 | 2   |In analytics.py --  Corrected field names  |     Jittu496          |     Jittu496         |
 | 3   | Incorrect delete endpoint with two parameters in items.py  |     Jittu496        |     Jittu496       |
 | 4   | No proper error handling  in items.py    |   Jittu496          |      Jittu496       | 
-| 5   |                                          |               |              |
+| 5   |    No proper type hints                  |     Jittu496         |    Jittu496          |  
 | 6   |                                          |               |              |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
