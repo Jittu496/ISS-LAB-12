@@ -50,11 +50,11 @@
 | 13  |        There's a random comment about music genres: # whats ur favorite genre of music ??? mine is EDM which doesn't belong in production code. | vineel sai reddy
  |14 |        There's a duplicate route decorator @router.post("/") for both get_users() and create_user() functions, which would cause a route conflict. |vineel sai reddy 
   | 15|  In the delete_user() function, it's using an incorrect method collection.delete_all() instead of the correct collection.delete_one({"_id": ObjectId(user_id)}).   | vineel sai reddy                               |               |              |                                          |               |                                                     |               |              |
-| 16  |                                          |               |              |
-| 17  |                                          |               |              |
-| 18  |                                          |               |              |
+| 16  | In main.py-- Changed the home route path:  |        Chervith       |       Chervith         |
+| 17  |GET method for submitting answers in quiz.py          |    Chervith Reddy           |     Chervith Reddy         |
+| 18  |             No proper request body validation      in quiz.py                      |         Chervith      |     Chervith         |
 | 19  |  Added <div id="news">Loading news...</div> inside the .container to ensure the script has a target element in news.html  | Babu Shaik     |  Babu Shaik           | 
-| 20  |                                          |               |              |
+| 20  |        Global state for game_state       in quiz.py                     |       Chervith        |    Chervith          |
 | 21  |                                          |               |              |
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
