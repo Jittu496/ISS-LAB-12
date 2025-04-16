@@ -34,8 +34,8 @@
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
 | 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
-| 2   |                                          |               |              |
-| 3   |                                          |               |              |
+| 2   |In analytics.py --  Corrected field names  |     Jittu496          |     Jittu496         |
+| 3   |   Incorrect delete endpoint with two parameters in items.py  |     Jittu496        |     Jittu496       |
 | 4   |                                          |               |              |
 | 5   |                                          |               |              |
 | 6   |                                          |               |              |
