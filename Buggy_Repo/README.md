@@ -35,8 +35,8 @@
 |-----|------------------------------------------|---------------|--------------|
 | 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
 | 2   |In analytics.py --  Corrected field names  |     Jittu496          |     Jittu496         |
-| 3   |   Incorrect delete endpoint with two parameters in items.py  |     Jittu496        |     Jittu496       |
-| 4   |                                          |               |              |
+| 3   | Incorrect delete endpoint with two parameters in items.py  |     Jittu496        |     Jittu496       |
+| 4   | No proper error handling  in items.py    |   Jittu496          |      Jittu496       | 
 | 5   |                                          |               |              |
 | 6   |                                          |               |              |
 | 7   |                                          |               |              |
