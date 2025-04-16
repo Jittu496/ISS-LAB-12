@@ -28,6 +28,7 @@
 
 - Name : Roll Number
 - Chervith Reddy : 2024101076
+- Jithendra Sai Ram Jetty : 2024101102
 
 ### Table to keep track
 
@@ -38,7 +39,7 @@
 | 3   | Incorrect delete endpoint with two parameters in items.py  |     Jittu496        |     Jittu496       |
 | 4   | No proper error handling  in items.py    |   Jittu496          |      Jittu496       | 
 | 5   |    No proper type hints                  |     Jittu496         |    Jittu496          |  
-| 6   |                                          |               |              |
+| 6   | i have changed the items.py - Duplicate POST endpoint for create_item  |      Jittu496       |     Jittu496     |     
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
