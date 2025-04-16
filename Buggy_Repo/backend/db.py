@@ -9,4 +9,3 @@ def init_db():
         "items_collection": db["item"],
         "users_collection": db["users"]
     }
-    # Question for chocolate: How can we implement nosql syntax in mysql ???
