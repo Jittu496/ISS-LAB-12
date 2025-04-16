@@ -47,11 +47,9 @@
 | 11  | GET method for submitting answers in quiz.py          |    Chervith Reddy           |     Chervith Reddy         |
 | 12  |    The HTTP method for get_users() is incorrectly set to @router.post("/") instead of @router.get("/"). | vineel sai reddy         
 |               |              |
-| 13  |        There's a random comment about music genres: # whats ur favorite genre of music ??? mine is EDM which doesn't belong in production code.  vineel sai reddy
-There's a duplicate route decorator @router.post("/") for both get_users() and create_user() functions, which would cause a route conflict. vineel sai reddy 
-In the delete_user() function, it's using an incorrect method collection.delete_all() instead of the correct collection.delete_one({"_id": ObjectId(user_id)}).    vineel sai reddy                               |               |              |
-| 14  |                                          |               |              |
-| 15  |                                          |               |              |
+| 13  |        There's a random comment about music genres: # whats ur favorite genre of music ??? mine is EDM which doesn't belong in production code. | vineel sai reddy
+ |14 |        There's a duplicate route decorator @router.post("/") for both get_users() and create_user() functions, which would cause a route conflict. |vineel sai reddy 
+  | 15|  In the delete_user() function, it's using an incorrect method collection.delete_all() instead of the correct collection.delete_one({"_id": ObjectId(user_id)}).   | vineel sai reddy                               |               |              |                                          |               |                                                     |               |              |
 | 16  |                                          |               |              |
 | 17  |                                          |               |              |
 | 18  |                                          |               |              |
