@@ -44,7 +44,7 @@
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
 | 10  |                                          |               |              |
-| 11  |                                          |               |              |
+| 11  | GET method for submitting answers in quiz.py          |    Chervith Reddy           |     Chervith Reddy         |
 | 12  |                                          |               |              |
 | 13  |                                          |               |              |
 | 14  |                                          |               |              |
